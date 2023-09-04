@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carregar e Salvar Imagem</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Adicione um arquivo de estilo CSS externo -->
+</head>
+<body>
+    <div class="container">
+        <h1>Carregar e Salvar Imagem</h1>
+        <div class="drop-zone">
+            <label for="inputImagem">Arraste e solte ou selecione uma imagem</label>
+            <input type="file" id="inputImagem" accept="image/*">
+        </div>
+        </br>
+        <img id="imagemExibida" src="img-modelo.jpg" width="50px" alt="Imagem Carregada">
+        </br>
+        <span id="codigoGerado"></span>
+        </br></br>
+        <button id="botaoSalvar" onclick="salvarImagem()">Salvar Imagem</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
